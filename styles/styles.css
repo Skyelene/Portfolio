@@ -5,13 +5,21 @@
   --main-font-family: "Cabin", sans-serif;
 }
 
+body {
+  font-family: var(--main-font-family);
+}
+
 h1 {
   font-size: 100px;
 }
 
 h2 {
-  font-size: 20px;
+  text-align: center;
   padding-bottom: 50px;
+}
+
+p {
+  text-align: center;
 }
 
 .intro {
@@ -29,6 +37,43 @@ h2 {
   border-radius: 40px;
   padding: 12px 20px;
   color: var(--primary-color);
-  background: var(--secondary-color);
+  background-color: var(--secondary-color);
   line-height: 27px;
+}
+
+.btn-contract:hover {
+  background-color: var(--primary-color) !important;
+  color: var(--secondary-color) !important;
+}
+
+.btn-journey {
+  font-size: 15px;
+  text-decoration: none;
+  border: 1px solid var(--primary-color);
+  border-radius: 40px;
+  padding: 12px 20px;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  line-height: 27px;
+}
+
+.btn-journey:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.btn-projects {
+  font-size: 15px;
+  text-decoration: none;
+  border: 1px solid var(--primary-color);
+  border-radius: 40px;
+  padding: 12px 20px;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  line-height: 27px;
+}
+
+.btn-projects:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
