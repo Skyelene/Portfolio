@@ -42,8 +42,8 @@ p {
 }
 
 .btn-branding:hover {
-  background-color: var(--primary-color) !important;
-  color: var(--secondary-color) !important;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .btn-journey {
@@ -80,6 +80,7 @@ p {
 
 .description-text {
   padding-top: 50px;
+  padding-bottom: 50px;
   text-align: center;
 }
 
@@ -113,10 +114,43 @@ p {
   padding: 120px 30px;
 }
 
+nav {
+  padding: 20px 0;
+  font-family: var(--heading-font-family);
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: all 100s ease-in-out;
+}
+
+nav a:hover,
+nav li .active a {
+  color: var(--secondary-color);
+}
+
 @media (max-width: 1023px) {
   .description-text {
     padding: 50px;
     text-align: center;
+  }
+
+  .pic {
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -146,5 +180,9 @@ p {
   }
   .content {
     padding-bottom: 30px;
+  }
+
+  nav a {
+    font-size: 14px;
   }
 }
