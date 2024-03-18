@@ -114,6 +114,10 @@ p {
   padding: 120px 30px;
 }
 
+.logo {
+  max-height: 40px;
+}
+
 nav {
   padding: 20px 0;
   font-family: var(--heading-font-family);
@@ -134,7 +138,7 @@ nav li {
 nav a {
   text-decoration: none;
   color: var(--primary-color);
-  transition: all 100s ease-in-out;
+  transition: all 100ms ease-in-out;
 }
 
 nav a:hover,
