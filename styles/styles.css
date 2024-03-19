@@ -114,36 +114,12 @@ p {
   padding: 120px 30px;
 }
 
-.logo {
-  max-height: 40px;
-}
-
-nav {
-  padding: 20px 0;
-  font-family: var(--heading-font-family);
-}
-
-nav ul {
-  padding: 0;
-  margin: 0;
-}
-
-nav li {
-  display: inline;
-  list-style: none;
-  line-height: 42px;
-  margin-left: 15px;
-}
-
-nav a {
-  text-decoration: none;
+.nav-bar-dark .navbar-nav .nav-link .active {
   color: var(--primary-color);
-  transition: all 100ms ease-in-out;
 }
 
-nav a:hover,
-nav li .active a {
-  color: var(--secondary-color);
+.nav-item {
+  padding: 0 10px;
 }
 
 @media (max-width: 1023px) {
@@ -184,9 +160,5 @@ nav li .active a {
   }
   .content {
     padding-bottom: 30px;
-  }
-
-  nav a {
-    font-size: 14px;
   }
 }
