@@ -1,0 +1,264 @@
+:root {
+  --primary-color: #291f71;
+  --secondary-color: #cabbe9;
+  --heading-font-family: "Fraunces", serif;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--primary-color);
+}
+
+h1 {
+  font-family: var(--heading-font-family);
+  font-weight: 600;
+  font-size: 120px;
+}
+
+h2 {
+  font-family: var(--heading-font-family);
+  font-size: 25px;
+  font-weight: 300;
+}
+
+h3 {
+  font-family: var(--heading-font-family);
+  font-size: 20px;
+  font-weight: 300;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+nav .nav-logo {
+  max-width: 80px;
+}
+
+nav {
+  padding: 15px 0;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 82px;
+  margin: 0 7px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+nav a:hover,
+nav li.active a {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.hero {
+  background: var(--secondary-color);
+  text-align: center;
+  padding: 130px 20px;
+}
+
+.btn-branding {
+  border-radius: 40px;
+  color: var(--primary-color);
+  background: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+  line-height: 27px;
+  padding: 12px 20px;
+  font-size: 15px;
+}
+
+.btn-branding:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 40px;
+  border: 1px solid var(--primary-color);
+}
+
+.content-block {
+  padding: 140px 40px 100px;
+}
+
+.contact-block {
+  padding: 50px 10px 30px;
+  text-align: center;
+}
+
+.contact-block a {
+  color: var(--primary-color);
+}
+
+.right-arch {
+  border-top-right-radius: 400px;
+  border-bottom-right-radius: 400px;
+}
+
+.left-arch {
+  border-top-left-radius: 400px;
+  border-bottom-left-radius: 400px;
+}
+
+.work-subtitle {
+  text-align: center;
+  padding: 50px 0 20px 0;
+}
+
+.certifications {
+  margin: 0px 0px 40px;
+}
+
+.page-break {
+  color: var(--primary-color);
+  font-size: 15px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.page-break i {
+  margin: 0 15px;
+}
+
+footer {
+  margin: 20px 0px 20px;
+  text-align: center;
+}
+
+footer .contact-box {
+  background: var(--secondary-color);
+  padding: 20px 0px;
+}
+
+footer .contact-box p {
+  font-family: var(--heading-font-family);
+  color: var(--primary-color);
+  font-size: 22px;
+  font-weight: 300;
+}
+
+footer .social-icons a {
+  margin: 0 15px;
+  color: var(--primary-color);
+  background: var(--secondary-color);
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 22px;
+  transition: all 120ms ease-in-out;
+}
+
+footer .social-icons a:hover {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+footer .alternative-social-icons a {
+  margin: 0 15px;
+  color: var(--secondary-color);
+  background: var(--primary-color);
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 22px;
+  transition: all 120ms ease-in-out;
+}
+
+footer .alternative-social-icons a:hover {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+footer .coding-credit {
+  padding: 20px 0 0 0px;
+}
+
+footer .coding-credit p {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+footer .alternative-coding-credit a {
+  color: var(--primary-color);
+}
+
+footer .alternative-coding-credit {
+  padding: 20px 0 0 0px;
+}
+
+footer .alternative-coding-credit p {
+  font-family: var(--bs-body-font-family);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+footer .coding-credit a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+  .content-block {
+    padding: 50px 10px;
+    text-align: center;
+  }
+
+  .content-block p {
+    text-align: left;
+  }
+}
+
+@media (max-width: 641px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    line-height: 1.5;
+  }
+
+  .work-subtitle {
+    padding: 0px 10px 30px 10px;
+  }
+
+  .content-block,
+  .coding-projects {
+    padding: 50px 10px 30px;
+    text-align: center;
+  }
+
+  .certifications {
+    padding: 20px 10px 30px;
+    margin: 0px 0px 15px;
+  }
+
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .content-block p,
+  .coding-projects p {
+    text-align: left;
+  }
+
+  .page-break {
+    margin-bottom: 25px;
+  }
+
+  nav a {
+    text-align: center;
+  }
+
+  footer {
+    margin-top: 0px;
+  }
+}
