@@ -1,7 +1,11 @@
 :root {
   --primary-color: #291f71;
   --secondary-color: #cabbe9;
-  --heading-font-family: "Fraunces", serif;
+  --heading-font-family: "Playwrite GB S", cursive;
+}
+
+body {
+  font-family: var(--heading-font-family);
 }
 
 h1,
@@ -11,19 +15,16 @@ h3 {
 }
 
 h1 {
-  font-family: var(--heading-font-family);
   font-weight: 600;
   font-size: 120px;
 }
 
 h2 {
-  font-family: var(--heading-font-family);
-  font-size: 25px;
+  font-size: 40px;
   font-weight: 300;
 }
 
 h3 {
-  font-family: var(--heading-font-family);
   font-size: 20px;
   font-weight: 300;
 }
@@ -115,10 +116,6 @@ nav li.active a {
   padding: 50px 0 20px 0;
 }
 
-.certifications {
-  margin: 0px 0px 40px;
-}
-
 .page-break {
   color: var(--primary-color);
   font-size: 15px;
@@ -129,6 +126,10 @@ nav li.active a {
 
 .page-break i {
   margin: 0 15px;
+}
+
+.description {
+  padding: 20px;
 }
 
 footer {
@@ -204,6 +205,7 @@ footer .alternative-coding-credit p {
 footer .coding-credit a {
   color: var(--primary-color);
   text-decoration: none;
+  font-size: 20px;
 }
 
 @media (max-width: 1024px) {
@@ -236,11 +238,6 @@ footer .coding-credit a {
     text-align: center;
   }
 
-  .certifications {
-    padding: 20px 10px 30px;
-    margin: 0px 0px 15px;
-  }
-
   .hero {
     padding: 80px 20px;
   }
@@ -260,5 +257,36 @@ footer .coding-credit a {
 
   footer {
     margin-top: 0px;
+  }
+}
+
+.nav-logo {
+  display: none;
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  .navbar-brand .nav-logo {
+    display: block !important;
+  }
+
+  .navbar-brand {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+  }
+
+  .navbar {
+    padding-left: 100px;
+  }
+
+  .navbar-collapse {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-brand .nav-logo {
+    display: block;
+    position: static;
   }
 }

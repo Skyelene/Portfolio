@@ -10,11 +10,10 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/41ae05d9be.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
-        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./styles/portfolio.css" />
     <meta name="description"
         content="About Rachel. Rachel Buday is a British Front-end developer, based in Munich, Germany." />
@@ -22,24 +21,41 @@
 </head>
 
 <body>
-    <div class="container">
-        <a href="/">
-            <nav class="d-flex justify-content-md-between justify-content-center">
-                <img src="./images/Logo RB.png" alt="RB logo" class="nav-logo d-none d-sm-block" title="Homepage" />
-                <ul>
-                    <li><a href="./" title="Homepage">Home</a></li>
-                    <li class="active">
-                        <a href="./about.html" title="About Rachel">About me</a>
-                    </li>
-                    <li><a href="./work.html" title="Rachel's Projects">My Projects</a></li>
-                    <li><a href="./contact.html" title="Contact Rachel">Contact</a></li>
-                </ul>
-            </nav>
-        </a>
+
+    <a href="/">
+        <nav class="navbar navbar-expand-lg navbar-light bg-purple p-3">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html" alt="Rachel Buday" title="Homepage">
+                    <img src="./images/Logo RB.png" alt="RB logo" class="nav-logo d-sm-block" title="Homepage" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./index.html" title="Homepage">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html" title="About Rachel">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./work.html" title="Rachel's Projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html" title="Contact Rachel">Contact</a>
+                        </li>
+                    </ul>
+                    </ul>
+                </div>
+        </nav>
+    </a>
     </div>
 
     <div class="hero">
-        <h1 class="mb-3">Welcome to my page</h1>
+        <h1 class="mb-3">Hello there!</h1>
     </div>
     <div class="container">
         <div class="row">
@@ -65,7 +81,7 @@
                 </div>
             </div>
             <div class="col-lg-6 mt-4 mb-3">
-                <img src="./images/Me.jpg" alt="Rachel looking through a circular art sculpture"
+                <img src="./images/Me_HQTY.jpg" alt="Rachel looking through a circular art sculpture"
                     class="img-fluid right-arch" />
             </div>
         </div>
@@ -80,7 +96,7 @@
             <a href="mailto:rbuday89@gmail.com" target="_blank" title="Email Rachel">
                 <i class="fa-regular fa-envelope"></i>
             </a>
-            <a href="https://www.linkedin.com/in/rachel-buday-44505a107/" target="_blank" title="Rachel's LinkedIn"><i
+            <a href="https://www.linkedin.com/in/rachel-buday" target="_blank" title="Rachel's LinkedIn"><i
                     class="fa-brands fa-linkedin"></i></a>
             <a href="https://github.com/Skyelene" target="_blank" title="Rachel's GitHub"><i
                     class="fa-brands fa-github"></i></a>

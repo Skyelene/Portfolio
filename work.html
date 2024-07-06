@@ -10,11 +10,10 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/41ae05d9be.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
-        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./styles/portfolio.css" />
     <meta name="description"
         content="Rachel's Projects. Rachel Buday is a British Front-end developer, based in Munich, Germany." />
@@ -22,21 +21,39 @@
 </head>
 
 <body>
-    <div class="container">
-        <a href="/">
-            <nav class="d-flex justify-content-md-between justify-content-center">
-                <img src="./images/Logo RB.png" alt="RB logo" class="nav-logo d-none d-sm-block" title="Homepage" />
-                <ul>
-                    <li><a href="./" title="Homepage">Home</a></li>
-                    <li>
-                        <a href="./about.html" title="About Rachel">About me</a>
-                    </li>
-                    <li class="active"><a href="/work.html" title="Rachel's Projects">My Projects</a></li>
-                    <li><a href="./contact.html" title="Contact">Contact</a></li>
-                </ul>
-            </nav>
-        </a>
+
+    <a href="/">
+        <nav class="navbar navbar-expand-lg navbar-light bg-purple p-3">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html" alt="Rachel Buday" title="Homepage">
+                    <img src="./images/Logo RB.png" alt="RB logo" class="nav-logo d-sm-block" title="Homepage" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./index.html" title="Homepage">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html" title="About Rachel">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./work.html" title="Rachel's Projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html" title="Contact Rachel">Contact</a>
+                        </li>
+                    </ul>
+                    </ul>
+                </div>
+        </nav>
+    </a>
     </div>
+
     <div class="hero">
         <h1 class="mb-3">My Projects</h1>
     </div>
@@ -48,13 +65,13 @@
                     <img src="./images/Weather App.jpg" alt="preview of Rachel's weather app Project"
                         class="img-fluid rounded" />
                     <h3 class="mt-3">My Weather App</h2>
-                        <p class="mb-4">
+                        <p class="description mb-4">
                             Built my first interactive application with HTML, CSS, JavaScript, VSCode, API, Git, GitHub
                             &
                             Hosting.
                         </p>
-                        <a href="" class="btn btn-branding mb-3" target="_blank"
-                            title="Launch weather app project">Check Out
+                        <a href="https://wettervorhersage-shecodes.netlify.app" class="btn btn-branding mb-3"
+                            target="_blank" title="Launch weather app project">Check Out
                             Project</a>
                 </div>
 
@@ -62,13 +79,13 @@
                     <img src="./images/World Clock App.jpg" alt="Preview of Rachel's world clock Project"
                         class="img-fluid rounded" />
                     <h3 class="mt-3">My World Clock App</h2>
-                        <p class="mb-4">
-                            Built more sophisticated interactions & advanced features with HTML, CSS, JavaScript,
+                        <p class="description mb-4">
+                            Built more sophisticated interactions & advanced features with CSS, JavaScript,
                             VSCode,
                             API, Git, GitHub &
                             Hosting.
                         </p>
-                        <a href="" class="btn btn-branding mb-3" target="_blank"
+                        <a href="https://welt-uhr.netlify.app" class="btn btn-branding mb-3" target="_blank"
                             title="Launch world clock app project">Check Out
                             Project</a>
                 </div>
@@ -77,17 +94,57 @@
                     <img src="./images/Life Quote Generator.jpg"
                         alt="Preview of Rachel's Life Quote Generator App Project" class="img-fluid rounded" />
                     <h3 class="mt-3">My Life Quote Generator App</h2>
-                        <p class="mb-4">
+                        <p class="description mb-4">
                             Integrated AI API into my code with HTML, CSS, JavaScript, VSCode, API, Git, GitHub,
                             Hosting,
                             API & AI.
                         </p>
-                        <a href="" class="btn btn-branding mb-3" target="_blank"
-                            title="Launch Life Quote Generator App project">Check Out
+                        <a href="https://ai-life-quote-generator.netlify.app" class="btn btn-branding mb-3"
+                            target="_blank" title="Launch Life Quote Generator App project">Check Out
                             Project</a>
                 </div>
             </div>
 
+            <div class="row">
+                <div class="col-md-4 mt-3">
+                    <img src="./images/Budapest Travel website.jpg"
+                        alt="preview of Rachel's Budapest travel website Project" class="img-fluid rounded" />
+                    <h3 class="mt-3">Budapest Travel App</h2>
+                        <p class="description mb-4">
+                            Built my first responsive application with HTML, CSS, VS Code, Git, GitHub, Hosting, SEO &
+                            responsive.
+                        </p>
+                        <a href="https://budapest-travel-website.netlify.app" class="btn btn-branding mb-3"
+                            target="_blank" title="Launch budapest-travel-website project">Check Out
+                            Project</a>
+                </div>
+
+                <div class="col-md-4 mt-3">
+                    <img src="./images/Dictionary App.jpg" alt="preview of Rachel's Dictionary App Project"
+                        class="img-fluid rounded" />
+                    <h3 class="mt-3">My Dictionary App</h2>
+                        <p class="description mb-4">
+                            Built more advanced features with CSS, JaraScript, VS Code, API, Git, GitHub, Bootstrap,
+                            Hosting and React.js.
+                        </p>
+                        <a href="https://dictionary-app-rb.netlify.app" class="btn btn-branding mb-3" target="_blank"
+                            title="Launch Dictionary App project">Check Out
+                            Project</a>
+                </div>
+
+                <div class="col-md-4 mt-3">
+                    <img src="./images/Watch this space!.jpg" alt="preview of Rachel's Budapest travel website Project"
+                        class="img-fluid rounded" />
+                    <h3 class="mt-3">Future Projects pending...</h2>
+                        <p class="description mb-4">
+                            Currently I'm creating a website for pet sitting services. Until then why not find out more
+                            about me?
+                        </p>
+                        <a href="./about.html" class="btn btn-branding mb-3" target="_blank"
+                            title="Launch About Rachel">Find Out About
+                            Rachel</a>
+                </div>
+            </div>
         </div>
 
     </div>
@@ -102,7 +159,7 @@
             <a href="mailto:rbuday89@gmail.com" target="_blank" title="Email Rachel">
                 <i class="fa-regular fa-envelope"></i>
             </a>
-            <a href="https://www.linkedin.com/in/rachel-buday-44505a107/" target="_blank" title="Rachel's LinkedIn"><i
+            <a href="https://www.linkedin.com/in/rachel-buday" target="_blank" title="Rachel's LinkedIn"><i
                     class="fa-brands fa-linkedin"></i></a>
             <a href="https://github.com/Skyelene" target="_blank" title="Rachel's GitHub"><i
                     class="fa-brands fa-github"></i></a>
